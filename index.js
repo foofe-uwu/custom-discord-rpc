@@ -6,19 +6,19 @@ client.request('SET_ACTIVITY', {
 pid: process.pid,
 
 activity: {
-	details: "mew!",
-	state: "petting the foofy",
+	details: "-", // Top text - text directly below application name
+	state: "-", // Text below top text
 	assets: {
-		large_image: "uwu", 
-		large_text: "rawr!",
-		small_image: "paws",
-		small_text: "mew",
+		large_image: "(large image key here)", // Large status image (main one)
+		large_text: "-", // Text that appears when hovering over large image
+		small_image: "(small image key here)", // Small status image (circle corner one)
+		small_text: "-", // Text that appears when hovering over small image
 	},
 
-	buttons: [{label: "pet the foofy!", url: "http://floofe.ml"}, {label: "ur dad", url: "https://http.cat/410"}]
+	buttons: [{label: "(label here)", url: "(url here)"}, {label: "(label here)", url: "(url here)"}] // Status buttons, optional
 
 	}
 })
 })
 
-client.login({clientId: "845809484961677313"}).catch(console.error);
+client.login({clientId: "(client id here)"}).catch(console.error); // Discord Developer Portal > Selected Application > OAuth2
